@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::resource('/kebutuhan', \App\Http\Controllers\KebutuhanController::class);
+Route::resource('/riwayat_medis', \App\Http\Controllers\Riwayat_medisController::class);
