@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('/siswa',
+\App\Http\Controllers\siswaController::class);
+
+
+Route::resource('/harian',
+\App\Http\Controllers\harianController::class);
