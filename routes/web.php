@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+Route::resource('/kemajuan',
+\App\Http\Controllers\KemajuanController::class);
+
+
+Route::resource('/kehadiran',
+\App\Http\Controllers\KehadiranController::class);
